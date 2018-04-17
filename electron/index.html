@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+    <link href="./main.css" rel="stylesheet" type="text/css">
+    <script src="./functions.js"></script>
+  </head>
+  <body>
+    <div class="bigBox">
+      <input type="text" id="numberBox" placeholder="0">
+      <input type="button" class="number" id="7" onClick="appendNumber(7)" value="7">
+      <input type="button" class="number" id="8" onClick="appendNumber(8)" value="8">
+      <input type="button" class="number" id="9" onClick="appendNumber(9)" value="9">
+      <input type="button" class="operator" id="plusButton" onClick="appendPlus()"  value="+">
+      <input type="button" class="number" id="4" onClick="appendNumber(4)" value="4">
+      <input type="button" class="number" id="5" onClick="appendNumber(5)" value="5">
+      <input type="button" class="number" id="6" onClick="appendNumber(6)" value="6">
+      <input type="button" class="operator" id="subButton" onClick="appendDash()" value="-">
+      <input type="button" class="number" id="1" onClick="appendNumber(1)" value="1">
+      <input type="button" class="number" id="2" onClick="appendNumber(2)" value="2">
+      <input type="button" class="number" id="3" onClick="appendNumber(3)" value="3">
+      <input type="button" class="operator" id="multButton" onClick="appendMultiply()" value="*">
+      <input type="button" class="number" id="0" onClick="appendNumber(0)" value="0">
+      <input type="button" class="operator" id="divButton" onClick="appendDiv()" value="&#247;">
+      <input type="submit" id="equals" onClick="evaluateNumberBox()" value="=">
+    </div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
